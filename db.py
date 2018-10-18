@@ -12,7 +12,7 @@ db_name = 'news'
 
 
 def get_query_results(query):
-    """Passes given query to database and returns results."""
+    """Pass given query to database and returns results."""
     db = psycopg2.connect(database=db_name)
     c = db.cursor()
 
@@ -22,6 +22,7 @@ def get_query_results(query):
 
     db.close()
     return results
+
 
 def get_top_articles():
     """Query the database and return the top 3 articles."""
