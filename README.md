@@ -23,7 +23,7 @@ This logs analysis tool queries the [news database](https://d17h27t6h515a5.cloud
     3. In psql run 'create database news;'
     4. Run '\q' to exit psql
     5. Run 'psql news -f newsdata.sql' to populate the database
-* Run 'analyze.py'
+* Run 'python analyze.py'
 
 ### Output
 This program returns the following three pieces of information and saves it to 'analysis.txt':
